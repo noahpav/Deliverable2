@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0" />
+    <title>Organization Home Page</title>
+    <!-- <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="/css/styles.css" /> -->
+    <!-- <script defer src="/scripts/scripts.js"></script> -->
+  </head>
+  <body>
+    <header>
+      <div class="top-banner">
+        <a href="index.html">Home Page - Ann Arbor Skyline</a>
+      </div>
+    </header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#records">Records</a></li>
+        <li><a href="#staff">Staff</a></li>
+        <li><a href="#videos">Media</a></li>
+        <li><a href="#search" class="search-icon">🔍</a></li>
+      </ul>
+    </nav>
+    <main class="content-section">
+      <!-- Teams Section -->
+      <section id="teams-section" class="teams-section">
+        <h1>Teams</h1>
+
+        <div class="team-container">
+          <!-- Mens Team -->
+          <div class="team">
+            <h2>Men's Team</h2>
+            <table>
+              <caption>
+                Athlete Name
+              </caption>
+              <tr>
+                <!-- Loop through and add the name of each athlete on mens_team -->
+                <td>{athlete_name}</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Womens Team -->
+          <div classs="team">
+            <h2>Women's Team</h2>
+            <table>
+              <caption>
+                Athlete Name
+              </caption>
+              <tr>
+                <!-- Loop through and add the name of each athlete on womens_team -->
+                <td>{athlete_name}</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Past Events Section -->
+      <section id="events" class="content">
+        <div class="events">
+          <h1>Past Events</h1>
+          {event_section}
+          <!-- Loop through and add the name and date of each event -->
+          <!-- <table>
+            <caption>
+              Events from {meet_name}
+            </caption>
+            <tr>
+              <th>Event Name</th>
+              <th>Event Date</th>
+            </tr>
+            <tr>
+              <td>{event_name}</td>
+              <td>{event_date}</td>
+            </tr>
+          </table> -->
+        </div>
+      </section>
+
+      <!-- Photo Gallery Section -->
+      <section id="gallery" class="content">
+        <div class="gallery">
+          <h1>Photo Gallery</h1>
+          {gallery_section}
+        </div>
+      </section>
+    </main>
+
+    <!-- Contact Section -->
+    <footer>
+      <div class="contact">
+        <h1>Contact Us</h1>
+        <p>Email: contact@xcountry.org</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 XCountry Lane, City, State, ZIP</p>
+      </div>
+    </footer>
+  </body>
+</html>
