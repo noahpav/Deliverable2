@@ -75,8 +75,19 @@ html_template = """
         </div>
       </section>
 
-      <!-- Past Events Section -->
+      <!-- Events Section -->
       <section id="events" class="content">
+        <div>
+            <h2>Season Calendar</h2>
+            <ul>
+                <li>August 18, 2023 - <a href=https://www.athletic.net/CrossCountry/meet/221431/info>Lamplighter
+                        Invite</a></li>
+                <li>September 9, 2023 - <a href=https://www.athletic.net/CrossCountry/meet/221738/info>Bret Clemets Bath
+                        Invitational</a></li>
+                <li>May 15, 2025 - National Meet</li>
+                <li>June 20, 2025 - Off-Season Start</li>
+            </ul>
+        </div>
         <div class="events">
           <h1>Past Events</h1>
           {event_section}
@@ -96,6 +107,30 @@ html_template = """
           </table> -->
         </div>
       </section>
+
+      section id="team-accomplishments">
+        <h2>Team Accomplishments for the Season</h2>
+
+        <div class="accomplishment" id="top-times">
+            <h3>Top 3 Athlete Performances</h3>
+                <ul>
+                    <li>Athlete 1 - time at Meet A</li>
+                    <li>Athlete 2 - time at Meet B</li>
+                    <li>Athlete 3 - time at Meet C</li>
+                </ul>
+        </div>
+
+        <div class="accomplishment" id="best-performance">
+            <h3>Best Team Performance of the Season</h3>
+            <p>Meet: Championship Meet</p>
+            <p>Place: 1st Place</p>
+        </div>
+
+        <div class="remarks">
+            <h3>Coach's Remarks</h3>
+            <p id="coachs-remarks">comments here.</p>
+        </div>
+    </section>
 
       <!-- Photo Gallery Section -->
       <section id="gallery" class="content">
@@ -117,6 +152,7 @@ html_template = """
     </footer>
   </body>
 </html>
+
 """
 
 # Function to get the first line (athlete's name) from each CSV file
@@ -190,7 +226,7 @@ def generate_gallery_html(events_folder):
             # Start creating a section for each event
             gallery_html += f"""
             <div class="event-gallery">
-              <h3>{event_name}</h3>
+              <h2>{event_name}</h2>
               <div class="photos">
             """
 
