@@ -33,9 +33,9 @@ html_template = """
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#events">Events</a></li>
-        <li><a href="#records">Records</a></li>
+        <li><a href="#accomplishments">Records</a></li>
         <li><a href="#staff">Staff</a></li>
-        <li><a href="#videos">Media</a></li>
+        <li><a href="#gallery">Media</a></li>
         <li><a href="#search" class="search-icon">🔍</a></li>
       </ul>
     </nav>
@@ -108,10 +108,10 @@ html_template = """
         </div>
       </section>
 
-      <section id="team-accomplishments">
+      <section id="accomplishments">
         <h2>Team Accomplishments for the Season</h2>
 
-        <div class="accomplishment" id="top-times">
+        <div class="accomplishments" id="top-times">
             <h3>Top 3 Athlete Performances</h3>
                 <ul>
                     <li>Athlete 1 - time at Meet A</li>
@@ -120,7 +120,7 @@ html_template = """
                 </ul>
         </div>
 
-        <div class="accomplishment" id="best-performance">
+        <div class="accomplishments" id="best-performance">
             <h3>Best Team Performance of the Season</h3>
             <p>Meet: Championship Meet</p>
             <p>Place: 1st Place</p>
