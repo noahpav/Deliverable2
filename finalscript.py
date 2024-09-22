@@ -108,7 +108,7 @@ html_template = """
         </div>
       </section>
 
-      section id="team-accomplishments">
+      <section id="team-accomplishments">
         <h2>Team Accomplishments for the Season</h2>
 
         <div class="accomplishment" id="top-times">
