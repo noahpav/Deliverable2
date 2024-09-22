@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salem High School</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #1c22c9;
+            color: #fafafa;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            height: 100px;
+        }
+
+        nav {
+            width: 100%;
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        nav button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #1c22c9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        nav button:hover {
+            background-color: #5b5ebf;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+        }
+
+        .teams,
+        .calendar {
+            width: 65%;
+            padding: 20px;
+            background-color: #fafafa;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .teams ul {
+            list-style-type: none;
+        }
+
+        .teams li {
+            margin: 10px 0;
+        }
+
+        .teams a {
+            color: #1c22c9;
+            text-decoration: none;
+        }
+
+        .teams a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.png" alt="Organization Logo">
+        <h1>Salem High School</h1>
+    </header>
+
+    <nav>
+        <button>About Us</button>
+        <button>Events</button>
+        <button>Photos</button>
+        <button>Staff</button>
+    </nav>
+
+    <div class="container">
+        <div class="calendar">
+            <h2>Season Calendar</h2>
+            <ul>
+                <li>August 18, 2023 - <a href=https://www.athletic.net/CrossCountry/meet/221431/info>Lamplighter
+                        Invite</a></li>
+                <li>September 9, 2023 - <a href=https://www.athletic.net/CrossCountry/meet/221738/info>Bret Clemets Bath
+                        Invitational</a></li>
+                <li>May 15, 2025 - National Meet</li>
+                <li>June 20, 2025 - Off-Season Start</li>
+            </ul>
+        </div>
+
+        <div class="teams">
+            <h2>Teams</h2>
+            <ul>
+                <li><a href="team1.html">Team A</a></li>
+                <li><a href="team2.html">Team B</a></li>
+                <li><a href="team3.html">Team C</a></li>
+                <li><a href="team4.html">Team D</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact us: email@crosscountry.org | Phone: (123) 456-7890</p>
+    </footer>
+
+</body>
+
+</html>
