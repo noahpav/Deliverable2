@@ -54,6 +54,8 @@ html_template = """
               </caption>
               <tr>
                 <!-- Loop through and add the name of each athlete on mens_team -->
+                <!-- Each athlete name will serve as a link that takes you too their individual athlete page -->
+                <!-- Each page will include School, Class, Recent Races and times/finishes, accomplishments, progression graph, etc. -->
                 <td>{athlete_name}</td>
               </tr>
             </table>
@@ -68,6 +70,8 @@ html_template = """
               </caption>
               <tr>
                 <!-- Loop through and add the name of each athlete on womens_team -->
+                <!-- Each athlete name will serve as a link that takes you too their individual athlete page -->
+                <!-- Each page will include School, Class, Recent Races and times/finishes, accomplishments, progression graph, etc. -->
                 <td>{athlete_name}</td>
               </tr>
             </table>
