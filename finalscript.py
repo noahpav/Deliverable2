@@ -267,7 +267,7 @@ html_output = html_output.replace("{event_section}", events_html)
 html_output = html_output.replace("{gallery_section}", gallery_html)
 
 # Save the updated HTML content to a file
-with open("output.html", 'w') as output_file:
+with open("index.html", 'w') as output_file:
     output_file.write(html_output)
 
-print("HTML template with dynamic data has been generated and saved as 'output.html'.")
+print("HTML template with dynamic data has been generated and saved as 'index.html'.")
